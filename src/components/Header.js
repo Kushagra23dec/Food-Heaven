@@ -4,7 +4,7 @@ import { logo_url } from "../assets/resources";
 
 const Header = ()=>{
     return(
-        <div className="flex justify-between  sticky top-0 font-semibold items-center flex-wrap bg-amber-200 shadow-md"  >
+        <div className="flex justify-between  fixed top-0 left-0 right-0 font-semibold items-center flex-wrap bg-amber-200 shadow-md"  >
 
 <Link to="/">  <img className="w-20" src={logo_url} alt="Food_Villa" /> </Link>
             <ul className="flex flex-wrap">
