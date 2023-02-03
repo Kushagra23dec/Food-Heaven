@@ -24,7 +24,7 @@ const Body = () => {
 
 
     return(restaurants.length === 0)?
-   null
+   <Shimmer />
     :(
         <div className="flex flex-wrap grow justify-center mt-8 mx-3 " >
 
