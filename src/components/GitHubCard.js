@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import { github_url } from "../assets/resources";
 
 async function fetchData(setUser,searchName) {
-    const res = await fetch( "https://api.github.com/users/kushagra23dec?tab=repositories"  );
+    const res = await fetch( github_url+searchName  );
 
     const data = await res.json();
     setUser(data);
@@ -13,7 +13,7 @@ async function fetchData(setUser,searchName) {
 const GitHubCard = () => {
     const [user, setUser] = useState([]);
     const [name, setName] = useState("");
-    const [searchName, setSearchName] = useState("");
+    const [searchName, setSearchName] = useState("kushagra23dec");
     useEffect(() => {
         fetchData(setUser,searchName);
     }

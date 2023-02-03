@@ -1,9 +1,12 @@
 import  {createContext} from "react";
 
-const UserContext = createContext({
-    DarkTheme:"bg-grey-500",
-    LightTheme:"bg-white",
-});
+const UserContext = createContext(
+    {user: {
+        name:"dummy name",
+        email:"dummy@gmail.com",
+    },
+}
+);
 
 
 export default UserContext;

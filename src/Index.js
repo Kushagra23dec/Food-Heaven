@@ -9,6 +9,7 @@ import CardDetails from "./components/CardDetails";
 import Contact from "./components/Contact";
 import Cart from "./components/Cart";
 import GitHubCard from "./components/GitHubCard";
+import Error from "./components/Error.js";
 const AppLayout = () => {
     return (
         <div className="h-full flex flex-col">
@@ -24,30 +25,37 @@ const AppLayout = () => {
 const appRoute = createBrowserRouter([{
     path: "/",
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
         {
             path: "/",
-            element: <Body />
+            element: <Body />,
+
         },
         {
             path: "/about",
-            element: <About />
+            element: <About />,
+
         },
         {
             path: "/cart",
-            element: <Cart />
+            element: <Cart />,
+
         },
         {
             path: "/contact",
-            element: <Contact />
+            element: <Contact />,
+
         },
         {
             path: "/carddetail/:id",
-            element: <CardDetails />
+            element: <CardDetails />,
+
         },
         {
             path: "/github",
-            element: <GitHubCard />
+            element: <GitHubCard />,
+
         },
     ]
 }]);
