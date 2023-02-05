@@ -2,8 +2,7 @@ import { useRouteError,Link } from "react-router-dom";
 
 const Error = () => {
     const { status, statusText, data } = useRouteError();
-
-    // console.log(error);
+ 
     return (
         <div className="p-10 bg-blue-400  h-full">
             <h1 className="text-2xl font-bold mb-2">{status} - {statusText} 🦥🦥</h1>

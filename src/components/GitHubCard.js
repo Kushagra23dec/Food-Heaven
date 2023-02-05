@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { github_url } from "../assets/resources";
+import { GITHUB_URL } from "../assets/resources";
 
 async function fetchData(setUser,searchName) {
-    const res = await fetch( github_url+searchName  );
+    const res = await fetch( GITHUB_URL+searchName  );
 
     const data = await res.json();
     setUser(data);
