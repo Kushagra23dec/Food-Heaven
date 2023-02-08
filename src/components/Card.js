@@ -15,6 +15,7 @@ const Card = ({cloudinaryImageId,
           <h1 className="text-lg font-bold">{name}</h1>
           <h1 className="font-semibold text-gray-800">{cuisines[0]} {cuisines.length >=2 ? ",": ""} { cuisines.length >=2 && cuisines[1]}  </h1> 
           <div className=" px-2 flex justify-between ">
+           
             <span className=" text-sm   font-semibold text-gray-800">{avgRating === "--"?null: avgRating }</span>
             <h1 className="text-sm font-semibold text-gray-800">{maxDeliveryTime} MINS</h1>
           </div>  

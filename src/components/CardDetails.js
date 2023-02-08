@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { CLOUDINARY_IMG_BASE_URL, MENU_URL } from "../assets/resources";
+import { CLOUDINARY_IMG_BASE_URL } from "../assets/resources";
 import MenuCard from "./MenuCard";
 import Shimmer from "./Shimmer.js";
 import useMenu from "../utils/useMenu";
+
 
 
 const handleSearch = (menu, searchMenu, setFilteredMenu) => {
@@ -35,7 +36,7 @@ const CardDetails = () => {
         <div>
             <div className=" flex justify-center p-3 bg-gray-600 flex-wrap shadow-md ">
                 <input className="p-2 text-lg w-1/2 rounded-l-md focus:bg-amber-200" type="text"
-                    value={searchMenu} placeholder="Restaurant" onChange={(e) => { setSearchMenu(e.target.value) }} />
+                    value={searchMenu} placeholder="Dish Name" onChange={(e) => { setSearchMenu(e.target.value) }} />
                 <button className="text-lg font-semibold px-1 bg-amber-400 rounded-r-md" onClick={() => { handleSearch(menu, searchMenu, setFilteredMenu) }}>Search</button>
             </div>
             <Shimmer />
@@ -45,7 +46,7 @@ const CardDetails = () => {
             <div>
                 <div className=" flex justify-center p-3 bg-gray-600 flex-wrap shadow-md ">
                     <input className="p-2 text-lg w-1/2 rounded-l-md focus:bg-amber-200" type="text"
-                        value={searchMenu} placeholder="Restaurant" onChange={(e) => { setSearchMenu(e.target.value) }} />
+                        value={searchMenu} placeholder="Dish Name" onChange={(e) => { setSearchMenu(e.target.value) }} />
                     <button className="text-lg font-semibold px-1 bg-amber-400 rounded-r-md" onClick={() => { handleSearch(menu, searchMenu, setFilteredMenu) }}>Search</button>
                 </div>
 
