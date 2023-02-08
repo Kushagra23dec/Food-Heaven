@@ -10,7 +10,7 @@ const Card = ({cloudinaryImageId,
     maxDeliveryTime,
     avgRating,}) => {
     return (
-        <div className="shadow-lg p-2   bg-yellow-50 my-2 mx-2 w-64  rounded-md">
+        <div className="shadow-2xl p-2   bg-amber-50 my-2 mx-2 w-64  rounded-md">
           <img className="w-fit" src={CLOUDINARY_IMG_BASE_URL+cloudinaryImageId} />
           <h1 className="text-lg font-bold">{name}</h1>
           <h1 className="font-semibold text-gray-800">{cuisines[0]} {cuisines.length >=2 ? ",": ""} { cuisines.length >=2 && cuisines[1]}  </h1> 
