@@ -33,7 +33,7 @@ const CardDetails = () => {
     const menu = useMenu(id, setFilteredMenu);
 
     return (filteredMenu?.length === 0) ?
-        <div>
+        <div className="grow">
             <div className=" flex justify-center p-3 bg-gray-600 flex-wrap shadow-md ">
                 <input className="p-2 text-lg w-1/2 rounded-l-md focus:bg-amber-200" type="text"
                     value={searchMenu} placeholder="Dish Name" onChange={(e) => { setSearchMenu(e.target.value) }} />
@@ -43,14 +43,14 @@ const CardDetails = () => {
         </div>
 
         : (
-            <div>
+            <div className="grow">
                 <div className=" flex justify-center p-3 bg-gray-600 flex-wrap shadow-md ">
                     <input className="p-2 text-lg w-1/2 rounded-l-md focus:bg-amber-200" type="text"
                         value={searchMenu} placeholder="Dish Name" onChange={(e) => { setSearchMenu(e.target.value) }} />
                     <button className="text-lg font-semibold px-1 bg-amber-400 rounded-r-md" onClick={() => { handleSearch(menu, searchMenu, setFilteredMenu) }}>Search</button>
                 </div>
 
-                <div className="flex grow p-5 text-gray-800  flex-wrap">
+                <div className="flex  p-5 text-gray-800  flex-wrap">
 
 
 
@@ -72,10 +72,8 @@ const CardDetails = () => {
                     </div>
                     {/* Menu Container... */}
                     <div className="flex  w-4/5 ">
-                        <h1 className="font-bold ml-2 text-3xl ">Menu</h1>
-
                         <div className="flex flex-wrap justify-center">
-                            {filteredMenu?.map((dishId) => { return <MenuCard key={menu?.menu?.items[dishId]?.id} {...menu?.menu?.items[dishId]} /> })}
+                            {filteredMenu?.map((dishId) => { return <MenuCard key={menu?.menu?.items[dishId]?.id} item={menu?.menu?.items[dishId]} /> })}
                         </div>
                     </div>
 

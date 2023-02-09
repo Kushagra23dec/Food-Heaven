@@ -10,8 +10,13 @@ import Contact from "./components/Contact";
 import Cart from "./components/Cart";
 import GitHubCard from "./components/GitHubCard";
 import Error from "./components/Error.js";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+
+
 const AppLayout = () => {
     return (
+        <Provider store={store}>
         <div className="h-full flex flex-col">
             <Header />
 
@@ -19,6 +24,8 @@ const AppLayout = () => {
 
             <Footer />
         </div>
+        </Provider>
+
     )
 }
 
