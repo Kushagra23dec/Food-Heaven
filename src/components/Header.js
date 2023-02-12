@@ -43,15 +43,15 @@ const Header = () => {
 
             {isHam &&
 
-                <div className="lg:hidden block bg-amber-100 pl-10">
-                    <ul className=" text-base w-full ">
-                        <Link to="/"> <li className="mx-2 my-1 py-1  hover:text-blue-700 hover:underline ">Home</li> </Link>
-                        <Link to="/about"> <li className="mx-2 my-1 py-1 hover:text-blue-700 hover:underline">About-Us</li> </Link>
-                        <Link to="/contact"> <li className="mx-2 my-1 py-1 hover:text-blue-700 hover:underline">Contact-Us</li> </Link>
+                <div className="lg:hidden bg-amber-50 flex flex-col items-center pb-1">
+                    <ul className=" text-base  ">
+                        <Link to="/"> <li className="mx-2 my-1 py-1 hover:text-blue-700 hover:underline  hover:bg-amber-100">Home</li> </Link>
+                        <Link to="/about"> <li className="mx-2 my-1 py-1 hover:text-blue-700 hover:underline hover:bg-amber-100">About-Us</li> </Link>
+                        <Link to="/contact"> <li className="mx-2 my-1 py-1 hover:text-blue-700 hover:underline hover:bg-amber-100">Contact-Us</li> </Link>
                         {/* <Link to="/github"> <li className="mx-2 my-1 text-xl">Github</li> </Link> */}
-                        <Link to="/cart"> <li className="mx-2 my-1  px-2  py-1">Cart<span className="border-2 border-gray-800 ml-1 py-0 px-1  rounded-md">{cartItems.length}</span></li> </Link>
-                        <button className="bg-gray-800  text-white rounded-md p-1 hover:bg-gray-900">Dark</button>
-                        <button className="mx-2 mr-4 font-semibold bg-blue-600 rounded-md p-1 hover:bg-blue-500 text-white">Login</button>
+                        <Link to="/cart"> <li className="mx-2 my-1  px-2 py-1  hover:bg-amber-100">Cart<span className="border-2 border-gray-800 ml-1 py-0 px-1  rounded-md hover:bg-amber-100">{cartItems.length}</span></li> </Link>
+                        <button className="bg-gray-800  mx-1 text-white rounded-md p-1 hover:bg-gray-900 ">Dark</button>
+                        <button className=" font-semibold mx-1   bg-blue-600 rounded-md p-1 hover:bg-blue-500 text-white">Login</button>
                     </ul>
                 </div>
             }
