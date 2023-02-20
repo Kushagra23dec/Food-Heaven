@@ -27,7 +27,7 @@ const Cart = () => {
                  <button className="bg-orange-300 px-2 font-bold rounded-md text-gray-900 hover:bg-red-400"
                  onClick={()=>{handleClearCart()}}>Clear Cart</button>
 
-            <div className="flex grow p-6 flex-wrap">
+            <div className="flex grow p-6 flex-wrap justify-center">
 
                 {data.map((item) => { return <CartCard key={item.id} {...item} /> })}
 

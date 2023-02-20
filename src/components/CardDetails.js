@@ -56,17 +56,17 @@ const CardDetails = () => {
                 <div className=" p-5 text-gray-800  flex-wrap">
 
                     {/* Restaurant Card */}
-                    <div className=" bg-gray-500 flex rounded-lg flex-wrap">
+                    <div className=" bg-gray-500 flex rounded-lg flex-wrap shadow-xl mb-4">
 
                         {/* <div className="  "> */}
                         <img className="lg:w-1/4 sm:w-1/3 md:w-1/4 mr-4 rounded-lg " src={CLOUDINARY_IMG_BASE_URL + menu?.cloudinaryImageId} />
                         {/* </div> */}
                         <div className=" font-semibold ">
-                            <h1 className="font-bold text-4xl text-gray-800">{menu?.name}</h1>
-                            <h1 className="font-semibold text-xl text-gray-800">{menu?.cuisines.join(", ")} </h1>
-                            <h1 className="text-lg">{menu?.area}, {menu?.city}</h1>
-                            <h1 className="text-lg">{menu?.avgRating}⭐</h1>
-                            <h1 className="text-lg">{menu?.isVeg ? "Veg🥦" : "Non-Veg🥩"}</h1>
+                            <h1 className="font-bold text-4xl text-white">{menu?.name}</h1>
+                            <h1 className="font-semibold text-xl text-white">{menu?.cuisines.join(", ")} </h1>
+                            <h1 className="text-lg text-white">{menu?.area}, {menu?.city}</h1>
+                            <h1 className="text-lg text-white">{menu?.avgRating}⭐</h1>
+                            <h1 className="text-lg text-white">{menu?.isVeg ? "Veg🥦" : "Non-Veg🥩"}</h1>
 
                             {/* <button className="bg-orange-500 px-2 py-1 text-xl rounded-md hover:bg-orange-400">Order</button> */}
                         </div>
@@ -75,11 +75,11 @@ const CardDetails = () => {
 
 
                     {/* Menu Container... */}
-                    <div className="flex  w-4/5 ">
-                        <div className="flex flex-wrap justify-center">
-                            {filteredMenu?.map((dishId) => { return <MenuCard key={menu?.menu?.items[dishId]?.id} item={menu?.menu?.items[dishId]} /> })}
-                        </div>
+
+                    <div className="flex flex-wrap justify-center ">
+                        {filteredMenu?.map((dishId) => { return <MenuCard key={menu?.menu?.items[dishId]?.id} item={menu?.menu?.items[dishId]} /> })}
                     </div>
+
 
                 </div>
 
