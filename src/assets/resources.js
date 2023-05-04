@@ -2,7 +2,7 @@ export const LOGO_URL = "https://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9
 
 export const RESTAURANT_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=29.9456906&lng=78.16424780000001&page_type=DESKTOP_WEB_LISTING";
 
-export const MENU_URL = "https://www.swiggy.com/dapi/menu/v4/full?lat=29.9456906&lng=78.16424780000001&menuId=";
+export const MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0759837&lng=72.8776559&restaurantId=";
 
 
 export const CLOUDINARY_IMG_BASE_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
