@@ -1,6 +1,7 @@
 # FOOD HEAVEN
 # DEMO: https://foodheaven-version1.netlify.app/
 
+# I am using Swiggy's API, which has blocked CORS, So, Install this Chrome Extension to Enable it. [Allow CORS: Access-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
 
 # Home Page
 ![Screenshot (475)](https://user-images.githubusercontent.com/41586529/236153098-3da2390b-d95d-4f48-84f4-990656f1ff5c.png)
