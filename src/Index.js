@@ -13,62 +13,54 @@ import Error from "./components/Error.js";
 import { Provider } from "react-redux";
 import store from "./utils/store";
 
-
 const AppLayout = () => {
-    return (
-        <Provider store={store}>
-        <div className="h-full flex flex-col">
-            <Header />
+  return (
+    <Provider store={store}>
+      <div className="h-full flex flex-col">
+        <Header />
 
-            <Outlet />
+        <Outlet />
 
-            <Footer />
-        </div>
-        </Provider>
+        <Footer />
+      </div>
+    </Provider>
+  );
+};
 
-    )
-}
-
-const appRoute = createBrowserRouter([{
+const appRoute = createBrowserRouter([
+  {
     path: "/",
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
-        {
-            path: "/",
-            element: <Body />,
-
-        },
-        {
-            path: "/about",
-            element: <About />,
-
-        },
-        {
-            path: "/cart",
-            element: <Cart />,
-
-        },
-        {
-            path: "/contact",
-            element: <Contact />,
-
-        },
-        {
-            path: "/carddetail/:id",
-            element: <CardDetails />,
-
-        },
-        {
-            path: "/github",
-            element: <GitHubCard />,
-
-        },
-    ]
-}]);
-
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/carddetail/:id",
+        element: <CardDetails />,
+      },
+      {
+        path: "/github",
+        element: <GitHubCard />,
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<RouterProvider router={appRoute} />)
-
+root.render(<RouterProvider router={appRoute} />);

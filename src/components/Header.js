@@ -34,8 +34,8 @@ const Header = () => {
                         <Link to="/contact"> <li className="mx-2 my-1 hover:text-blue-700 hover:underline">Contact-Us</li> </Link>
                         {/* <Link to="/github"> <li className="mx-2 my-1 text-xl">Github</li> </Link> */}
                         <Link to="/cart"> <li className="mx-2 my-1  pr-4 ">Cart<span className="border-2 border-gray-800 ml-1 py-0 px-1  rounded-md">{cartItems.length}</span></li> </Link>
-                        <button className="bg-gray-800  text-white rounded-md p-1 hover:bg-gray-900">Dark</button>
-                        <button className="mx-2 mr-4 font-semibold bg-blue-600 rounded-md p-1 hover:bg-blue-500 text-white">Login</button>
+                        {/* <button className="bg-gray-800  text-white rounded-md p-1 hover:bg-gray-900">Dark</button> */}
+                        {/* <button className="mx-2 mr-4 font-semibold bg-blue-600 rounded-md p-1 hover:bg-blue-500 text-white">Login</button> */}
                     </ul>
                 </div>
 
@@ -50,8 +50,8 @@ const Header = () => {
                         <Link to="/contact"> <li className="mx-2 my-1 py-1 hover:text-blue-700 hover:underline hover:bg-amber-100">Contact-Us</li> </Link>
                         {/* <Link to="/github"> <li className="mx-2 my-1 text-xl">Github</li> </Link> */}
                         <Link to="/cart"> <li className="mx-2 my-1  px-2 py-1  hover:bg-amber-100">Cart<span className="border-2 border-gray-800 ml-1 py-0 px-1  rounded-md hover:bg-amber-100">{cartItems.length}</span></li> </Link>
-                        <button className="bg-gray-800  mx-1 text-white rounded-md p-1 hover:bg-gray-900 ">Dark</button>
-                        <button className=" font-semibold mx-1   bg-blue-600 rounded-md p-1 hover:bg-blue-500 text-white">Login</button>
+                        {/* <button className="bg-gray-800  mx-1 text-white rounded-md p-1 hover:bg-gray-900 ">Dark</button> */}
+                        {/* <button className=" font-semibold mx-1   bg-blue-600 rounded-md p-1 hover:bg-blue-500 text-white">Login</button> */}
                     </ul>
                 </div>
             }
